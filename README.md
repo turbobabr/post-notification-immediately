@@ -12,7 +12,7 @@ $ npm install post-notification-immediately
 ## Usage
 
 ```js
-const postNotification = require('colorio').pickColor;
+const postNotification = require('post-notification-immediately');
 
 pickColor('kUniqueNotificationName',{ data: 'Hey there! :)' }).then(() => {    
     // sent successfully
