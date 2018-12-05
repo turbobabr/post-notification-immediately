@@ -1,6 +1,6 @@
 {
   "name": "post-notification-immediately",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A helper Electron & Node.js module to post notifications immediately via macOS distributed notification center",
   "main": "index.js",
   "engines": {
