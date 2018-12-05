@@ -14,11 +14,18 @@ $ npm install post-notification-immediately
 ```js
 const postNotification = require('post-notification-immediately');
 
-pickColor('kUniqueNotificationName',{ data: 'Hey there! :)' }).then(() => {    
-    // sent successfully
-},(err) => {
-    // error caused by payload parsing
-});
+const userInfo = {
+    data: 'Hey there! :)'
+};
+
+postNotification('kUniqueNotificationName',userInfo).then(
+    () => {
+        // sent successfully
+    },
+    (err) => {
+        // error caused by payload parsing
+    }
+);
 ```
 
 ## Maintainers
