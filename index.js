@@ -7,7 +7,7 @@ function fixPathForAsarUnpack(path) {
   return isUsingAsar ? path.replace('app.asar', 'app.asar.unpacked') : path;
 }
 
-const postNotification = (name,userInfo) => {
+const postNotification = (name,userInfo,options) => {
   const electronFixedModuleBinaryPath = __dirname.endsWith('app.asar') ? 'node_modules/post-notification-immediately/bin' : 'bin'
   const BIN = options && options.execPath ? options.execPath : path.join(fixPathForAsarUnpack(__dirname), isElectron ? electronFixedModuleBinaryPath : 'bin');
 
