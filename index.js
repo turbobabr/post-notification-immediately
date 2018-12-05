@@ -8,7 +8,7 @@ function fixPathForAsarUnpack(path) {
 }
 
 const postNotification = (name,userInfo) => {
-  const electronFixedModuleBinaryPath = __dirname.endsWith('app.asar') ? 'node_modules/colorio/bin' : 'bin'
+  const electronFixedModuleBinaryPath = __dirname.endsWith('app.asar') ? 'node_modules/post-notification-immediately/bin' : 'bin'
   const BIN = options && options.execPath ? options.execPath : path.join(fixPathForAsarUnpack(__dirname), isElectron ? electronFixedModuleBinaryPath : 'bin');
 
   const binAndArgs = [BIN,JSON.stringify({
