@@ -1,2 +1,31 @@
 # post-notification-immediately
-A helper Electron &amp; Node.js module to post notifications immediately via macOS distributed notification center
+
+
+## Installation
+
+```
+$ npm install post-notification-immediately
+```
+
+*Requires macOS 10.12 or later.*
+
+## Usage
+
+```js
+const postNotification = require('colorio').pickColor;
+
+pickColor('kUniqueNotificationName',{ data: 'Hey there! :)' }).then(() => {    
+    // sent successfully
+},(err) => {
+    // error caused by payload parsing
+});
+```
+
+## Maintainers
+
+- [Andrey Shakhmin](https://github.com/turbobabr)
+
+## License
+
+MIT
+
